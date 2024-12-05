@@ -1,0 +1,957 @@
+/* Reset e estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/src/img/img-principais/pixelcut-export.jpeg");
+}
+
+/* NAV-BAR */
+.container-nav {
+    width: 100%;
+    height: 12%;
+    background: linear-gradient(to right, #4caf50, #009688);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.box-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.box-nav img {
+    width: 220px;
+    height: auto;
+}
+
+.box-nav div.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(250, 247, 247, 0.456);
+    border-radius: 30px;
+    padding: 8px;
+    max-height: 45px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    flex-grow: 0.6;
+}
+
+.box-nav div.search-container:hover {
+    background-color: rgba(230, 243, 246, 0.655);
+}
+
+.box-nav div.search-container input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 10px 15px 10px 40px;
+    width: 100%;
+    font-size: 17px;
+    color: #333;
+    padding-right: 40px;
+}
+
+.box-nav div.search-container i {
+    color: #5f9c40;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.box-nav div.search-container i.fa-magnifying-glass {
+    position: absolute;
+    left: 15px;
+}
+
+.box-nav div.search-container i.fa-magnifying-glass:hover {
+    color: #39948e;
+}
+
+.box-nav div.search-container i.fa-x {
+    position: absolute;
+    right: 15px;
+}
+
+.box-nav div.search-container i.fa-x:hover {
+    color: #39948e;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.box-nav .user-flex {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.box-nav .user-flex p {
+    color: #ffffff;
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.box-nav .fa-circle-user {
+    font-size: 32px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.box-nav .fa-circle-user:hover {
+    color: #b4e5e2;
+}
+
+/* CARROSSEL PRINCIPAL */
+.carrossel-principal {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.carrossel-slide {
+    min-width: 100%; 
+    box-sizing: border-box; 
+}
+
+.carrossel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carrossel-button {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
+    z-index: 2; /* Para garantir que estejam sobre outros elementos */
+}
+
+/* FRASES SOBRE A EMPRESA */
+.info-empresa {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%; 
+    background: linear-gradient(to right, #5dab90, #009688);
+}
+
+.info-item {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    margin: 0 5px;
+    background-color: #ffffff;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+}
+
+.info-item i {
+    font-size: 35px;
+    color: #4caf50;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.info-item:hover i {
+    color: #39948e; 
+    transform: scale(1.1); 
+}
+
+.info-item h3 {
+    font-size: 20px; 
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.info-item p {
+    font-size: 16px; 
+    color: #666;
+}
+
+
+/* CARROSSEL DE LIVROS MAIS AVALIADOS */
+.carrossel-livros {
+    background: linear-gradient(to right, #adb0b1, #e6f1eb);
+    padding: 20px 0;
+    text-align: center; /* Centraliza o título */
+    margin-top: 20px;
+}
+
+.carrossel-livros h2 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: rgb(94, 114, 124);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px 5px;
+}
+
+.carrossel-container-livros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carrossel-wrapper-livros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%; 
+    margin: 0 auto; 
+}
+
+.carrossel-slide-livro {
+    flex: 0 0 20%; 
+    display: none; 
+    opacity: 0; /* Início invisível */
+    transform: translateX(-20%); /* Move um pouco para a esquerda inicialmente */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Transições suaves */
+}
+
+.carrossel-slide-livro.visible {
+    display: block; 
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Reposiciona para o centro */
+}
+.slide-in {
+    transform: translateX(0);
+}
+
+.slide-out {
+    transform: translateX(-100%); /* Move o slide para a esquerda ao sair */
+}
+
+.carrossel-button {
+    background-color: #2bc230;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin: 20px;
+    transition: 0.4s;
+    box-shadow: 1px 1px 15px 2px #888;
+}
+
+.carrossel-button:hover{
+    background-color: #1c4f1d;
+}
+.anterior-livro {
+    left: 0;
+}
+
+.proximo-livro {
+    right: 0;
+}
+
+.card-livro {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+    position: relative;
+    width: 180px;
+    height: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+.card-livro:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5; 
+}
+
+.card-livro img {
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+    transition: opacity 0.3s ease;
+    z-index: 1; 
+}
+
+.card-livro:hover img {
+    opacity: 0.8; 
+}
+
+.info-livro {
+    width: 100%;
+    text-align: center;
+    position: relative; 
+    z-index: 2; 
+}
+
+.info-livro .nome {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+
+.card-livro:hover .info-livro .nome {
+    color: #4caf50;
+}
+
+.info-livro .nota {
+    font-size: 16px;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.card-livro:hover .info-livro .nota {
+    color: #555;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.add-lista {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.add-lista:hover {
+    background: #1c4f1d;
+    transform: scale(1.1);
+}
+
+/* HEADER DO CARROSEL DE  LIVROS */
+
+.header-carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.header-carrossel h2 {
+    font-size: 28px;
+    color: rgb(94, 114, 124);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    text-align: center; /* Centraliza o texto */
+}
+
+.ver-todos {
+    font-size: 16px;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #4caf50;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-left: 20px; /* Espaçamento entre título e botão */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ver-todos:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    .header-carrossel {
+        flex-direction: column; /* Alinha em coluna em telas menores */
+        align-items: center; /* Centraliza os elementos */
+    }
+    
+    .ver-todos {
+        margin-top: 10px; /* Espaço acima do botão em telas pequenas */
+        margin-left: 0; /* Remove margem esquerda para centralização */
+    }
+}
+/* RODAPÉ */
+.footer {
+    background: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+
+/* RESPONSIVIDADE DO CARROSSEL DE LIVROS */
+
+@media (max-width: 1300px) {
+    .card-livro {
+        margin: 3px;
+    }
+}
+@media (max-width: 1200px) {
+    .carrossel-slide-livro {
+        flex: 0 0 20%; /* Exibe 4 livros em telas grandes */
+    }
+}
+
+@media (max-width: 800px) {
+
+    .carrossel-slide-livro {
+        flex: 0 0 33%; /* Exibe 3 livros em telas médias */
+    }
+    
+    .card-livro {
+        margin: 10px;
+        height: 255px;
+        width: 160px;
+    }
+
+    .card-livro img {
+        width: 100px;
+        height: 150px; /* Ajusta a altura para manter a proporção */
+    }
+
+    .carrossel-button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .carrossel-slide-livro {
+        flex: 0 0 20%; /* Exibe 2 livros em telas pequenas */
+    }
+
+    .card-livro {
+        width: 150px;
+        height: 250px;
+    }
+
+    .card-livro img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .carrossel-button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .carrossel-slide-livro {
+        flex: 0 0 100%; /* Exibe 1 livro por vez em telas muito pequenas */
+    }
+
+    .card-livro {
+        width: 150px; /* Usar 90% da largura da tela */
+        height: 240px; /* Altura automática */
+        margin: 10px auto; /* Centralizar com margem */
+    }
+
+    .card-livro img {
+        width: 100px; /* Ajustar imagem para 90% da largura do card */
+        height: 140px; /* Manter a proporção */
+    }
+
+    .carrossel-button {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .add-lista {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.carrossel-container-livros,
+.carrossel-wrapper-livros,
+.carrossel-slide-livro {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* RESPONSIVIDADE DAS FRASES DA EMPRESA */
+@media (max-width: 800px) {
+    .info-empresa {
+        flex-direction: column;
+        padding: 10px 5px; 
+        height: auto;
+    }
+    
+    .info-item {
+        margin: 1px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .info-item {
+        margin: 1px 0; 
+        padding: 10px; 
+    }
+}
+
+/* RESPONSIVIDADE DA NAV-BAR */
+@media (max-width: 800px) {
+    .container-nav {
+        height: 230px;
+    }
+    .box-nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .box-nav div.search-container input {
+        width: 100%;
+    }
+    .box-nav div.search-container {
+        padding: 8px 15px;
+        width: 90%;
+    }
+    .box-nav img {
+        max-width: 200px;
+        width: 400px;
+        height: auto;
+    }
+    .box-nav .fa-circle-user {
+        font-size: 24px;
+    }
+    .container-nav {
+        padding: 10px 15px;
+    }
+    .nav-links {
+        display: flex;
+        gap: 50px;
+        font-weight: 600;
+    }
+    .info-empresa {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .info-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrossel-button {
+        font-size: 18px;
+    }
+    .info-item i {
+        font-size: 20px;
+    }
+    .carrossel-slide-livro img {
+        width: 80px;
+    }
+    .box-nav div.search-container input {
+        font-size: 12px;
+    }
+    .box-nav .fa-circle-user {
+        font-size: 24px;
+    }
+    .box-nav div.search-container {
+        padding: 8px 15px;
+        width: 100%;
+    }
+    .box-nav img {
+        max-width: 200px;
+        width: 200px;
+        height: auto;
+    }
+    .nav-links {
+        display: flex;
+        gap: 20px;
+        font-weight: 600;
+    }
+}
+
+/* CARROSSEL DE LIVROS DO SITE */
+.carrossel-livros-site {
+    background: linear-gradient(to right, #7eac9e, #a7eedc9c);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carrossel-livros-site h2 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: rgb(56, 68, 128);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px 5px;
+}
+
+.carrossel-container-livros-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carrossel-wrapper-livros-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%; 
+    margin: 0 auto; 
+}
+
+.carrossel-slide-livro-site {
+    flex: 0 0 20%; 
+    display: none; 
+    opacity: 0; /* Início invisível */
+    transform: translateX(-20%); /* Move um pouco para a esquerda inicialmente */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Transições suaves */
+}
+
+.carrossel-slide-livro-site.visible {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carrossel-button.anterior-livro-site {
+    left: 0;
+}
+
+.carrossel-button.proximo-livro-site {
+    right: 0;
+}
+
+.card-livro-site {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+    position: relative;
+    width: 180px;
+    height: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    margin: 0 auto;
+    overflow: hidden; /* Adiciona esta linha para evitar que a imagem ultrapasse o card */
+}
+
+.card-livro-site:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5;
+}
+
+.card-livro-site img {
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+    transition: opacity 0.3s ease;
+}
+
+.card-livro-site:hover img {
+    opacity: 0.8;
+}
+
+.info-livro-site {
+    width: 100%;
+    text-align: center;
+}
+
+.info-livro-site .nome-site {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+
+.card-livro-site:hover .info-livro-site .nome-site {
+    color: #4caf50;
+}
+
+.card-livro-site:hover img {
+    opacity: 0.8;
+    z-index: 1; /* Garante que a imagem tenha um z-index menor */
+}
+
+.info-livro-site .nota-site {
+    font-size: 16px;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.card-livro-site:hover .info-livro-site .nota-site {
+    color: #555;
+}
+
+.add-lista-site {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Coloca o botão acima da imagem */
+}
+
+.add-lista-site:hover {
+    background: #1c4f1d;
+    transform: scale(1.1);
+}
+
+/* HEADER DO CARROSSEL DE LIVROS DO SITE */
+.header-carrossel-site {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaço entre o h2 e o botão */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.header-carrossel-site h2 {
+    font-size: 28px;
+    color: rgb(84, 104, 114);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Remove margens para melhor alinhamento */
+}
+
+.ver-todos-site {
+    font-size: 16px;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #4caf50;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ver-todos-site:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    .header-carrossel-site {
+        flex-direction: column; /* Alinha em coluna em telas menores */
+        align-items: center; /* Centraliza os elementos */
+        gap: 2px; /* Espaço entre o h2 e o botão */
+    }
+
+    .ver-todos-site {
+        margin-top: 10px; /* Espaço acima do botão em telas pequenas */
+    }
+}
+
+/* RESPONSIVIDADE DO CARROSSEL DE LIVROS */
+
+@media (max-width: 1300px) {
+    .card-livro-site {
+        margin: 3px;
+    }
+}
+@media (max-width: 1200px) {
+    .carrossel-slide-livro-site {
+        flex: 0 0 20%; /* Exibe 4 livros em telas grandes */
+    }
+}
+
+@media (max-width: 800px) {
+
+    .carrossel-slide-livro-site {
+        flex: 0 0 33%; /* Exibe 3 livros em telas médias */
+    }
+    
+    .card-livro-site {
+        margin: 10px;
+        height: 255px;
+        width: 160px;
+    }
+
+    .card-livro-site img {
+        width: 100px;
+        height: 150px; /* Ajusta a altura para manter a proporção */
+    }
+
+    .carrossel-button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .carrossel-slide-livro-site {
+        flex: 0 0 20%; /* Exibe 2 livros em telas pequenas */
+    }
+
+    .card-livro-site {
+        width: 150px;
+        height: 250px;
+    }
+
+    .card-livro-site img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .carrossel-button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .carrossel-slide-livro-site {
+        flex: 0 0 100%; /* Exibe 1 livro por vez em telas muito pequenas */
+    }
+
+    .card-livro-site {
+        width: 150px; /* Usar 90% da largura da tela */
+        height: 240px; /* Altura automática */
+        margin: 10px auto; /* Centralizar com margem */
+    }
+
+    .card-livro-site img {
+        width: 100px; /* Ajustar imagem para 90% da largura do card */
+        height: 140px; /* Manter a proporção */
+    }
+
+    .carrossel-button {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .add-lista-site {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.carrossel-container-livros-site,
+.carrossel-wrapper-livros-site,
+.carrossel-slide-livro-site {
+    justify-content: center;
+    align-items: center;
+}

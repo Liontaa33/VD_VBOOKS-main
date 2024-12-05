@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/abrir.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Abrir Livro</title>
+</head>
+
+<body>
+    <!-- NAV-BAR DO VBOOKS -->
+    <header class="container-nav">
+        <div class="box-nav">
+            <a href="/" aria-label="Voltar para a página inicial">
+                <img src="../src/img/img-principais/logo_atualizada.png" alt="Logo do site">
+            </a>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-x" aria-label="Fechar busca"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="../livros">Livros</a>
+                <a href="../mangas">Mangás</a>
+                <a href="../hqs">HQ's</a>
+            </nav>
+            <div class="user-flex">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>@Lety</p>
+            </div>
+        </div>
+    </header>
+    <!-- NAV-BAR DO VBOOKS -->
+
+    <!-- Sobre o LIVRO -->
+    <section class="container-livro">
+        <div class="box-livro">
+            <div class="capa-livro">
+                <img src="../src/img/img-abrir-livro/The Love Hypothesis.png" alt="Capa do Livro">
+            </div>
+            <div class="descricao-livro">
+                <div class="titulo-e-icones">
+                    <h2>The Love Hypothesis</h2>
+                    <i class="fa-regular fa-heart" style="color: darkgreen;"></i>
+                    <i class="fa-regular fa-share-from-square" style="color: darkgreen;"></i>
+                    <i class="fa-solid fa-circle-plus" style="color: darkgreen;"></i>
+                </div>
+                <div>
+                    <p><strong id="sobre">Autor:</strong> Ali Hazelwood</p>
+                    <p><strong id="sobre">Editora:</strong> Berkley Books</p>
+                    <p><strong id="sobre">Ano de Publicação:</strong> 14/09/2021</p>
+                    <button class="botao-comprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo-livro">
+            <h3>Sinopse</h3>
+            <p>O livro conta a história de Olive, uma estudante de Biologia, em seu terceiro ano de PhD, e Adam Carlsen,
+                o professor mais severo de Stanford. A jovem não acredita muito no amor, e tem várias hipóteses sobre
+                isso. O problema dela é sua amiga Ahn, uma romântica incurável.</p>
+        </div>
+    </section>
+
+
+    <!-- Sobre o LIVRO -->
+
+    <!-- Características dos livros -->
+    <div class="caracteristicas">
+        <h3>Características do Livro</h3>
+        <div class="info-centralizada">
+            <ul>
+                <li><strong>Editora:</strong> Berkley Books; 1ª edição</li>
+                <li><strong>Número de Páginas:</strong> 400</li>
+                <li><strong>Acabamento:</strong> Capa Comum</li>
+                <li><strong>Autores:</strong> Ali Hazelwood e Jennifer Greene</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Características dos livros -->
+
+    <!-- Sequência de livros -->
+    <section class="sequencia">
+        <h3>Sequência</h3>
+        <div class="livro-sequencia">
+            <img src="../src/img/img-abrir-livro/Love, Theoretically.png" alt="Capa do livro Love, Theoretically">
+            <h4>Love on the Brain</h4>
+            <button>Ver</button>
+        </div>
+        <div class="livro-sequencia">
+            <img src="../src/img/img-abrir-livro/Love on the Brain.png" alt="Capa do livro Love on the Brain">
+            <h4>Love on the Brain</h4>
+            <button>Ver</button>
+        </div>
+    </section>
+    <!-- Sequência de livros -->
+
+    <!-- Experiência com o livro -->
+    <section class="experiencia">
+        <h3>Como você avaliaria sua experiência com o livro?</h3>
+        <div class="avaliacao">
+            <div class="estrela">
+                <i class="fa-regular fa-star"></i>
+                <p>Muito ruim</p>
+            </div>
+            <div class="estrela">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Neutro</p>
+            </div>
+            <div class="estrela">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Ótimo!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Experiência com o livro -->
+
+    <!-- Avaliações do público -->
+    <section>
+        <h3>Avaliações do público</h3>
+        <a href="#">Ver Tudo (100)</a>
+        <div class="comentario">
+            <h4>Nome: Lety</h4>
+            <blockquote>
+                <p>O livro foi muito bom, mas não consegui ler todos os capítulos.</p>
+            </blockquote>
+        </div>
+        <div class="comentario">
+            <h4>Nome: José</h4>
+            <blockquote>
+                <p>O livro é muito interessante, mas não é para todos os gostos.</p>
+            </blockquote>
+        </div>
+        <div class="comentario">
+            <h4>Nome: Maria</h4>
+            <blockquote>
+                <p>O livro é muito legal, e posso ter mais oportunidades de aprender sobre a ciência.</p>
+            </blockquote>
+        </div>
+        <div>
+            <button class="comentario-btn">Coloque sua opinião aqui</button>
+        </div>
+    </section>
+    <!-- Avaliações do público -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 VBooks - Todos os direitos reservados.</p>
+    </footer>
+    <!-- Footer -->
+
+    <script src="../src/js/abrir.js"></script>
+</body>
+
+</html>

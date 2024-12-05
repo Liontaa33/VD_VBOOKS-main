@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros - VBooks</title>
+    <link rel="stylesheet" href="../src/css/principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- NAV-BAR DO VBOOKS -->
+    <header class="container-nav">
+        <div class="box-nav">
+            <a href="/" aria-label="Voltar para a página inicial">
+                <img src="../src/img/img-principais/logo_atualizada.png" alt="Logo do site">
+            </a>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-x" aria-label="Fechar busca"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="../livros">Livros</a>
+                <a href="../mangas">Mangás</a>
+                <a href="../hqs">HQ's</a>
+            </nav>
+            <div class="user-flex">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>@Renan</p>
+            </div>
+        </div>
+    </header>
+    <!-- NAV-BAR DO VBOOKS -->
+
+    <!-- CARROSSEL PRINCIPAL -->
+    <section class="carrossel-principal">
+        <div class="carrossel-container">
+            <div class="carrossel-slide">
+                <img src="../src/img/img-carrosel/img1.png" alt="Slide 1">
+            </div>
+            <div class="carrossel-slide">
+                <img src="../src/img/img-carrosel/img2.png" alt="Slide 2">
+            </div>
+            <div class="carrossel-slide">
+                <img src="../src/img/img-carrosel/img3.png" alt="Slide 3">
+            </div>
+            <div class="carrossel-slide">
+                <img src="../src/img/img-carrosel/img4.png" alt="Slide 4">
+            </div>
+            <!-- <button class="carrossel-button anterior" onclick="moverSlide(-1)">&#10094;</button>
+            <button class="carrossel-button proximo" onclick="moverSlide(1)">&#10095;</button> -->
+        </div>
+    </section>
+
+   <!-- FRASES SOBRE A EMPRESA -->
+    <section class="info-empresa">
+        <div class="info-item">
+            <i class="fa-solid fa-book-open"></i> 
+            <h3>Milhões de Títulos</h3>
+            <p>Uma vasta coleção de livros de todo o mundo.</p>
+        </div>
+        <div class="info-item">
+            <i class="fa-solid fa-shield-alt"></i> 
+            <h3>Site Seguro</h3>
+            <p>Navegue com confiança, sua segurança é nossa prioridade.</p>
+        </div>
+        <div class="info-item">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3>Facilidade de Navegação</h3>
+            <p>Encontre o que procura de forma rápida e simples.</p>
+        </div>
+    </section>
+
+ <!-- CARROSSEL DE LIVROS MAIS AVALIADOS -->
+<section class="carrossel-livros">
+    <h2>Mangás Mais Avaliados</h2>
+    <div class="carrossel-container-livros">
+        <button class="carrossel-button anterior-livro" onclick="moverSlideLivros(-1)">&#10094;</button>
+
+        <div class="carrossel-wrapper-livros">
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/KAKEGURUI_CAPA.jpg" alt="Livro 1">
+                    <div class="info-livro">
+                        <p class="nome">Kakegurui</p>
+                        <p class="nota">4.5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/Viúva Negra_capa.jpg" alt="Livro 2">
+                    <div class="info-livro">
+                        <p class="nome">Viuva Negra</p>
+                        <p class="nota">0.0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/batma_hq_capa.jpg" alt="Livro 3">
+                    <div class="info-livro">
+                        <p class="nome">Batman</p>
+                        <p class="nota">10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/guerra_civil_capa.jpg" alt="Livro 4">
+                    <div class="info-livro">
+                        <p class="nome">Guerra civil</p>
+                        <p class="nota">9.0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/berserk_capa.jpg" alt="Livro 5">
+                    <div class="info-livro">
+                        <p class="nome">BERSERK</p>
+                        <p class="nota">8.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/berserk_capa.jpg" alt="Livro 5">
+                    <div class="info-livro">
+                        <p class="nome">BERSERK</p>
+                        <p class="nota">8.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/berserk_capa.jpg" alt="Livro 5">
+                    <div class="info-livro">
+                        <p class="nome">BERSERK</p>
+                        <p class="nota">8.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/berserk_capa.jpg" alt="Livro 5">
+                    <div class="info-livro">
+                        <p class="nome">BERSERK</p>
+                        <p class="nota">8.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/berserk_capa.jpg" alt="Livro 5">
+                    <div class="info-livro">
+                        <p class="nome">BERSERK</p>
+                        <p class="nota">8.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/berserk_capa.jpg" alt="Livro 5">
+                    <div class="info-livro">
+                        <p class="nome">BERSERK</p>
+                        <p class="nota">8.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/berserk_capa.jpg" alt="Livro 5">
+                    <div class="info-livro">
+                        <p class="nome">BERSERK</p>
+                        <p class="nota">8.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/berserk_capa.jpg" alt="Livro 5">
+                    <div class="info-livro">
+                        <p class="nome">BERSERK</p>
+                        <p class="nota">8.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/berserk_capa.jpg" alt="Livro 5">
+                    <div class="info-livro">
+                        <p class="nome">BERSERK</p>
+                        <p class="nota">8.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/Viúva Negra_capa.jpg" alt="Livro 2">
+                    <div class="info-livro">
+                        <p class="nome">Viuva Negra</p>
+                        <p class="nota">0.0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrossel-slide-livro">
+                <div class="card-livro">
+                    <button class="add-lista">+</button>
+                    <img src="../src/img/img-livros-test/Viúva Negra_capa.jpg" alt="Livro 2"> 
+                    <div class="info-livro">
+                        <p class="nome">Viuva Negra</p>
+                        <p class="nota">0.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carrossel-button proximo-livro" onclick="moverSlideLivros(1)">&#10095;</button>
+    </div>
+</section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <p>&copy; 2024 VBooks - Toda pirataria da Boa.</p>
+    </footer>
+    
+    <script src="../src/js/carrossel_livros.js"></script>
+</body>
+</html>
